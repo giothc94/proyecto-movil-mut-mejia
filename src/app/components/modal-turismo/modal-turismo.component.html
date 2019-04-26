@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="tabs/tab2" (click)="cerrar()"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-card-header>
+      <ion-card-title>
+        {{lugar.nombreLugar | uppercase}}
+      </ion-card-title>
+    </ion-card-header>
+
+    <img src="{{lugar.img}}" alt="">
+
+    <ion-card-subtitle style="display: flex;justify-content: center;">Lugares turisticos</ion-card-subtitle>
+
+    <ion-list>
+      <div *ngFor="let citio of lugar.listaLugares" >
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>{{citio.nombre}}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            {{citio.descripcion}}
+          </ion-card-content>
+        </ion-card>
+        </div>
+    </ion-list>
+  </ion-content>
