@@ -1,5 +1,7 @@
 {
   "name": "mut-mejia",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
