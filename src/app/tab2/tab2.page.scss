@@ -1,1 +1,30 @@
+.cont-img-row {
+  padding: 20px 0;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 15px 0;
+  position: relative;
+  background-color: rgba(0,0,0,0.5)
+//   filter: brightness(0.7);
+//   color: white;
+}
+.img-row {
+  height: 150px;
+  width: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.4);
 
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
